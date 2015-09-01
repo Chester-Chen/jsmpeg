@@ -1,5 +1,4 @@
-jsmpeg
-==========
+# jsmpeg
 
 #### An MPEG1 Video Decoder in JavaScript ####
 
@@ -8,6 +7,11 @@ emscripten or similar. This will probably make it obsolete with the advent of as
 
 Some demos and more info: [phoboslab.org/log/2013/05/mpeg1-video-decoder-in-javascript](http://www.phoboslab.org/log/2013/05/mpeg1-video-decoder-in-javascript)
 
+### Install ###
+
+```bash
+npm install jsmpeg
+```
 
 ### Usage ###
 
@@ -17,6 +21,7 @@ Some demos and more info: [phoboslab.org/log/2013/05/mpeg1-video-decoder-in-java
 // is given, jsmpeg will create its own, to be accessed at .canvas
 
 // Example:
+var jsmpeg = require('jsmpeg');
 var canvas = document.getElementById('videoCanvas');
 var player = new jsmpeg('file.mpeg', {canvas: canvas, autoplay: true, loop: true});
 
